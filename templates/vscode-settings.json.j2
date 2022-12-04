@@ -1,43 +1,136 @@
 {
-    "breadcrumbs.enabled": false,
-    "cSpell.language": "en-GB",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
-    "elixirLS.fetchDeps": false,
-    "explorer.confirmDragAndDrop": false,
-    "files.associations": {
-        "*.html.leex": "html-eex",
-        "*.leex": "html-eex"
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.cursorStyle": "line",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.formatOnType": true,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.editor.enablePreview": false,
+  "zenMode.hideLineNumbers": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.lineNumbers": "relative",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo"
+        }
+      ]
     },
-    "gitlens.menus": {
-        "editor": false,
-        "editorGroup": false,
-        "editorTab": false,
-        "explorer": false,
-        "scmGroup": false,
-        "scmItem": false
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vetur.experimental.templateInterpolationService": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "sonarlint.connectedMode.connections.sonarcloud": [
+    {
+      "organizationKey": "lawlift",
+      "connectionId": "lawlift"
+    }
+  ],
+  "todohighlight.isEnable": true,
+  "sonarlint.rules": {
+    "javascript:S1788": {
+      "level": "off"
     },
-    "path-autocomplete.triggerOutsideStrings": true,
-    "ruby.codeCompletion": "rcodetools",
-    "ruby.format": "rubocop",
-    "ruby.intellisense": "rubyLocate",
-    "ruby.useLanguageServer": true,
-    "terminal.integrated.allowChords": false,
-    "typescript.tsserver.log": "verbose",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "vim.smartRelativeLine": true,
-    "window.title": "${activeEditorLong}${separator}${rootName}",
-    "window.zoomLevel": 2,
-    "workbench.activityBar.visible": true,
-    "workbench.editor.closeEmptyGroups": false,
-    "workbench.editor.labelFormat": "short",
-    "workbench.editor.revealIfOpen": true,
-    "workbench.editor.showTabs": true,
-    "workbench.sideBar.location": "left",
-    "workbench.statusBar.visible": true,
-    "zenMode.fullScreen": false,
-    "zenMode.hideLineNumbers": false,
-    "zenMode.hideTabs": false
+    "javascript:S1440": {
+      "level": "on"
+    },
+    "javascript:S1442": {
+      "level": "on"
+    },
+    "javascript:S4138": {
+      "level": "off"
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "debug.inlineValues": "on",
+  "vscode-edge-devtools.mirrorEdits": true,
+  // "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.inlineSuggest.enabled": true,
+  "editor.detectIndentation": false,
+  "git.autofetch": true,
+  "githubPullRequests.fileListLayout": "flat",
+  "files.associations": {
+    "*.js": "javascript",
+    "*.ts": "typescript"
+  },
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "bracketPairColorizer.depreciation-notice": false,
+  "projectManager.git.baseFolders": ["~/Workspace"],
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "git-graph.commitDetailsView.location": "Docked to Bottom",
+  "eslint.lintTask.enable": true,
+  "vim.smartRelativeLine": true,
+  "gitPrefix.pattern": "(.*)(-DEV-\\d+)",
+  "gitPrefix.replacement": "'fix('+p1.replace(/-/g,' ').toLowerCase()+'):'",
+  "gitPrefix.replacementIsFunction": true,
+  "githubPullRequests.createOnPublishBranch": "never",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "sonarlint.pathToNodeExecutable": "/Users/luis/.nvm/versions/node/v16.13.1/bin/node",
+  "npm.enableTouchbar": true,
+  "todo-tree.tree.scanMode": "current file",
+  "todo-tree.tree.showBadges": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "githubPullRequests.pullBranch": "never",
+  "window.commandCenter": true,
+  "debug.toolBarLocation": "docked",
+  "window.zoomLevel": 0,
+  "projectManager.openInCurrentWindowIfEmpty": "never",
+  "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+  "editor.stickyScroll.enabled": true,
+  "redhat.telemetry.enabled": false
 }
